@@ -1,0 +1,68 @@
+.footers{
+    footer{
+        margin: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 20px;
+        row-gap: 30px;
+        @include breakpoint-up(medium){
+                    column-gap: 46px;
+                }
+        @include breakpoint-up(large){
+            column-gap: 20px;
+        }
+        
+
+        @include breakpoint-up(medium){
+            display: grid;
+            grid-template-areas:"indi site res"
+                                "indi comp port" ;
+        }
+        @include breakpoint-up(large){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        
+
+        .indiebrew{
+            flex-basis: 100%;
+            @include breakpoint-up(medium){
+            grid-area: indi;
+            flex-basis: 30%;
+            }
+        }
+        .sitemap{
+            flex-basis: 50%;
+            @include breakpoint-up(medium){
+            grid-area: site;
+            flex-basis: 15%;
+
+            }
+        }
+        .resources{
+            flex-basis: 50%;
+            @include breakpoint-up(medium){
+            grid-area: res;
+            flex-basis: 15%;
+            justify-self: right;
+            }
+        }
+        .company{
+            flex-basis: 50%;
+            @include breakpoint-up(medium){
+            grid-area: comp;
+            flex-basis: 15%;
+            }
+        }
+        .portfolio{
+            flex-basis: 50%;
+            @include breakpoint-up(medium){
+            grid-area: port;
+            flex-basis: 15%;
+            
+            }
+        }
+    }
+}

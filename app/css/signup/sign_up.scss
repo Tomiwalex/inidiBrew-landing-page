@@ -1,0 +1,140 @@
+@import '../../css/Home/mixins';
+body{
+    background-image: linear-gradient(to right bottom,#FCF7F9, #F6E8F9,  #FCF7F9);
+    padding: 0 10px;
+
+    &::before{
+        background-image: none;
+        display: none;      
+    }
+}
+.headers{
+    .header{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px 0 0;
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            a{
+                img{
+                    border: 1px black solid;
+                    background-image: rgba(255, 255, 255, 0.534);
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+            
+
+            b{
+                margin: 0 9px 0 15px;
+                font-size: 14px;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+html{
+    height: 100vh;
+}
+.mains{
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+
+        @include breakpoint-up(large){
+            justify-content: space-between;
+            
+        }
+    
+        .text{   
+            text-align: left;
+            font-size: 14px;
+            font-weight: 500;
+
+            @include breakpoint-up(large){
+                flex-basis: 45%;
+                
+            }
+
+            h1{
+                font-size: 32px;
+            }
+    
+            div{
+                display: flex;
+                b{
+                    font-size: 16px;
+                }
+                
+                span{
+                    margin: 16px 12px 0px 0;
+                }
+                p{
+                    color: black;           
+                }
+            }
+        }  
+    
+        .form{
+            h3{
+                font-size: 25px;
+            }
+            flex-basis: 100%;
+            @include breakpoint-up(large){
+                flex-basis: 45%;
+            }
+            form{
+                background-color: #ffffffa1;
+                border-radius: 10px;
+                padding: 20px;
+                width: 90%;
+                label{
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                input{
+                    border-radius: 5px;
+                    border: 1px solid rgb(163, 163, 163);
+                    width: 90%;
+                    padding: 15px;
+                    margin-bottom: 25px;
+
+                    &:focus, &:hover{
+                        border: 1px solid #654efcaf;
+                        outline: none;
+                    }
+
+                }
+                .button{
+                    width: 100%;
+                    height: max-content;
+                    border: none;
+                }
+
+                .terms{
+                    
+                    a{
+                        color: #654efc;
+                        font-weight: 700;
+                        text-decoration: underline;
+                    }
+                }
+            }          
+        }
+    }
+}
+

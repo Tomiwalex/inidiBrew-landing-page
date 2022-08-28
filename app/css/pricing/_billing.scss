@@ -1,0 +1,209 @@
+.descriptions{
+    .description{
+        text-align: center;
+        padding: 20px;
+        h1{
+            font-size: 35px;
+        }
+
+        .billing{
+            
+            .bold{
+                font-weight: 600;
+            }
+
+            .big-circle{
+                min-width: 40px;
+                min-height: 20px;
+                background-color: #3A84F7;
+                display: inline-block;
+                padding: 1px;
+                border-radius: 20px;
+                position: relative;
+                top: 6px;
+            }
+
+            .small-circle{
+                height: 20px;
+                width: 20px;
+                background: white;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.billings{
+    .container{
+        .billing{
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @include breakpoint-up(large){
+                justify-content: space-around;
+            }
+            
+
+            .sev, .twe, .four{
+                border: 2px solid #acacac;
+                border-radius: 6px;
+                margin: 20px;
+                padding: 30px;
+                flex-basis: 80%;
+                box-shadow: 0px 1px 8px #6161618e;
+                transition: all 300ms ease-in-out;
+
+                &:hover{
+                    transform: scale(1.02);
+                }
+
+                h2{
+                    display: inline;
+                }
+
+                a{
+                    position: relative;
+                    color: #616161;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    
+
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 10px;
+                        transform: translateY(2px);
+                    }
+                    
+                }
+                
+                p{
+                    border-bottom: 2px solid #c7c7c7;
+                    padding-bottom: 15px;
+                    font-weight: 500;
+
+                }
+                span{
+                    color: #b8b8b8;
+                }
+                .button{
+                    display: inline-block;
+                    width: calc(100% - 30px);
+                    text-align: center;
+                    margin: 10px auto;
+                    transform: translateX(-50%);
+                    position: relative;
+                    left: 50%;
+                }
+            }
+
+            .sev{
+               
+               animation: slidein 300ms ease-in-out;
+               @include breakpoint-up(medium){
+                   flex-basis: 32%;
+               }
+               @include breakpoint-up(large){
+                flex-basis: 22%;
+               }
+            }
+            .twe{
+                animation: slidein 500ms ease-in-out;
+               @include breakpoint-up(medium){
+                   flex-basis: 32%;
+               }
+               @include breakpoint-up(large){
+                flex-basis: 22%;
+               }
+            }
+
+            .four{
+                animation: slidein 700ms ease-in-out;
+               @include breakpoint-up(medium){
+                   
+               }
+               @include breakpoint-up(large){
+                    flex-basis: 22%;
+               }
+            }
+        }
+    }
+}
+
+.footerss{
+    background: #f1f1f18f !important;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+
+    .product{
+        flex-basis: 50%;
+        @include breakpoint-up(medium){
+            flex-basis: 30%;
+        }
+        @include breakpoint-up(large){
+            flex-basis: 20%;
+        }
+    }
+    .help{
+        flex-basis: 50%;
+        @include breakpoint-up(medium){
+            flex-basis: 30%;
+        }
+        @include breakpoint-up(large){
+            flex-basis: 20%;
+        }
+    }
+    .company{
+        flex-basis: 50%;
+        order: 3;
+        @include breakpoint-up(medium){
+            flex-basis: 30%;
+            order: 3;
+        }
+        @include breakpoint-up(large){
+            flex-basis: 20%;
+        }
+    }
+    .tweet{ 
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        order: 4;
+        flex-basis: 90%;
+        
+        @include breakpoint-up(medium){
+            flex-basis: 70%;
+        }
+
+        @include breakpoint-up(large){
+            flex-basis: 35%;
+            transform: none;
+            position: none;
+            left: 0;
+        }
+        fieldset{
+            display: flex;
+            padding:1px;
+            border-radius: 5px;
+            justify-content: space-between;
+
+            input[type='email']{
+                border: none;
+            }
+
+            .button{
+                height: 45px;
+                border: none;
+                width: 48%;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.headers{
+    .header{
+        @include breakpoint-up(medium){
+            margin-right: 30px;
+        }
+    
+        .tag{
+            width: 30px;
+        }
+        .pri-nav{
+            flex-basis: 75%;
+        }
+    }
+}

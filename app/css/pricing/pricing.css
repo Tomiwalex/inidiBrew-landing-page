@@ -1,0 +1,393 @@
+body::before {
+  background-image: none;
+  display: none;
+}
+
+.button {
+  background-color: #1D1B67;
+}
+
+.button:hover {
+  background-color: #1f1c66b4;
+}
+
+@media (min-width: 40em) {
+  .headers .header {
+    margin-right: 30px;
+  }
+}
+
+.headers .header .tag {
+  width: 30px;
+}
+
+.headers .header .pri-nav {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.descriptions .description {
+  text-align: center;
+  padding: 20px;
+}
+
+.descriptions .description h1 {
+  font-size: 35px;
+}
+
+.descriptions .description .billing .bold {
+  font-weight: 600;
+}
+
+.descriptions .description .billing .big-circle {
+  min-width: 40px;
+  min-height: 20px;
+  background-color: #3A84F7;
+  display: inline-block;
+  padding: 1px;
+  border-radius: 20px;
+  position: relative;
+  top: 6px;
+}
+
+.descriptions .description .billing .small-circle {
+  height: 20px;
+  width: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.billings .container .billing {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 64em) {
+  .billings .container .billing {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.billings .container .billing .sev, .billings .container .billing .twe, .billings .container .billing .four {
+  border: 2px solid #acacac;
+  border-radius: 6px;
+  margin: 20px;
+  padding: 30px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  -webkit-box-shadow: 0px 1px 8px #6161618e;
+          box-shadow: 0px 1px 8px #6161618e;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.billings .container .billing .sev:hover, .billings .container .billing .twe:hover, .billings .container .billing .four:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.billings .container .billing .sev h2, .billings .container .billing .twe h2, .billings .container .billing .four h2 {
+  display: inline;
+}
+
+.billings .container .billing .sev a, .billings .container .billing .twe a, .billings .container .billing .four a {
+  position: relative;
+  color: #616161;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.billings .container .billing .sev a img, .billings .container .billing .twe a img, .billings .container .billing .four a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.billings .container .billing .sev p, .billings .container .billing .twe p, .billings .container .billing .four p {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.billings .container .billing .sev span, .billings .container .billing .twe span, .billings .container .billing .four span {
+  color: #b8b8b8;
+}
+
+.billings .container .billing .sev .button, .billings .container .billing .twe .button, .billings .container .billing .four .button {
+  display: inline-block;
+  width: calc(100% - 30px);
+  text-align: center;
+  margin: 10px auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+.billings .container .billing .sev {
+  -webkit-animation: slidein 300ms ease-in-out;
+          animation: slidein 300ms ease-in-out;
+}
+
+@media (min-width: 40em) {
+  .billings .container .billing .sev {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+
+@media (min-width: 64em) {
+  .billings .container .billing .sev {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
+}
+
+.billings .container .billing .twe {
+  -webkit-animation: slidein 500ms ease-in-out;
+          animation: slidein 500ms ease-in-out;
+}
+
+@media (min-width: 40em) {
+  .billings .container .billing .twe {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+
+@media (min-width: 64em) {
+  .billings .container .billing .twe {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
+}
+
+.billings .container .billing .four {
+  -webkit-animation: slidein 700ms ease-in-out;
+          animation: slidein 700ms ease-in-out;
+}
+
+@media (min-width: 64em) {
+  .billings .container .billing .four {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
+}
+
+.footerss {
+  background: #f1f1f18f !important;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 20px;
+}
+
+.foot .product {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media (min-width: 40em) {
+  .foot .product {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 64em) {
+  .foot .product {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+.foot .help {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media (min-width: 40em) {
+  .foot .help {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 64em) {
+  .foot .help {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+.foot .company {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media (min-width: 40em) {
+  .foot .company {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (min-width: 64em) {
+  .foot .company {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+.foot .tweet {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+
+@media (min-width: 40em) {
+  .foot .tweet {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .foot .tweet {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    -webkit-transform: none;
+            transform: none;
+    position: none;
+    left: 0;
+  }
+}
+
+.foot .tweet fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1px;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.foot .tweet fieldset input[type='email'] {
+  border: none;
+}
+
+.foot .tweet fieldset .button {
+  height: 45px;
+  border: none;
+  width: 48%;
+}
+
+.switch-left {
+  -webkit-animation: switchleft 300ms ease-in-out  forwards;
+          animation: switchleft 300ms ease-in-out  forwards;
+}
+
+.switch-right {
+  -webkit-animation: switchright 300ms ease-in-out forwards;
+          animation: switchright 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes switchleft {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+@keyframes switchleft {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+@-webkit-keyframes switchright {
+  from {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes switchright {
+  from {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slidein {
+  from {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*# sourceMappingURL=pricing.css.map */

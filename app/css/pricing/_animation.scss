@@ -1,0 +1,39 @@
+.switch-left{
+    animation: switchleft 300ms ease-in-out  forwards;
+}
+.switch-right{
+    animation: switchright 300ms ease-in-out forwards;
+}
+//###########
+//animation style to control the switch between
+//monthly and weekly billings
+@keyframes switchleft {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+
+@keyframes switchright {
+    from{
+        transform: translateX(20px);
+    }
+    to{
+        transform: none;
+    }
+}
+
+@keyframes slidein{
+    from{
+        transform: translateX(-50%);
+    }
+
+    to{
+       transform: none;
+    }
+}
+
+
+

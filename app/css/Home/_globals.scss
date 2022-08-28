@@ -1,0 +1,211 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'public sans', sans-serif, 'DM+sans';
+    font-size: $font-med;
+    font-weight: 300;
+    line-height: 1.3;
+    overflow-x: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 533px;
+        top: 0;
+        left: -10px;
+        background-image: linear-gradient(to right bottom, #EBCBF6, #FBEEED, #FCF7F2);     ;
+        border-bottom-right-radius: 100%;
+        z-index: -1;
+        filter: blur(70px);
+    }
+    @include breakpoint-up(large){
+        font-size: $font-med;
+        &::before{
+            height: 470px;
+        }
+    }
+}
+
+.noscroll{
+    overflow-y: hidden;
+    height: 100vh;
+    @include breakpoint-up(medium){
+        overflow-y: scroll;
+        height: max-content;
+    }
+}
+
+.container{
+    max-width: 1113px;
+    margin: 0 auto;
+}
+
+
+.button{
+    a{
+        display: inline;
+        color: white;
+    }
+    display: inline;
+    color: white;
+    font-weight: 400;
+    background-color: #664EFC;
+    border-radius: 3px;
+    min-width: 7rem;
+    height: 20px;
+    padding: 13px;
+    font-size: $font-sm;
+    transition: all 300ms ease-in-out;
+    span{
+        font-weight: 200;
+    }
+
+    &:hover{
+        background-color: #654efcaf;
+        a{
+            color: white; 
+        }
+    }
+}
+//style for hide for mobile
+.h-f-m{
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
+
+//style for hide for tablet
+.h-f-t{
+    @include breakpoint-up(medium){
+        display: none;
+    }
+}
+
+//##########
+//style for contents in the paragraph tag
+p{
+    color: #6B6B6B;
+    font-size: 14px;
+    line-height: 1.5;
+    @include breakpoint-up(medium){
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}
+
+//#######
+//style for links
+a{
+    text-decoration: none;
+    display: block;
+    color: #6B6B6B;
+    font-size: 14px;
+    line-height: 1.5;
+
+    transition: all 300ms ease-in-out;
+
+
+    &:hover{
+        color: black;
+        font-weight: 600;
+    }
+}
+//########
+//style for hamburger-menu-btn
+#ham{
+    position: relative;
+    z-index: 3;
+}
+
+//#############
+// style for hamburger-menu
+.hamburger-menu{
+    position: absolute;
+    top:0;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    visibility: hidden;
+    background-image: linear-gradient(to right bottom, #EBCBF6, #FBEEED, #FCF7F2);
+
+    @include breakpoint-up(medium){
+        display: none;
+    }
+
+    .button{
+        display: block;
+        width: max-content;
+        margin: 30px;
+
+        a{
+            margin: 0 !important;
+        }
+    }
+    .content{
+        padding: 70px 20px;
+        margin:40px 0px;
+        border: 1px solid #654efcaf;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.411);
+        a{
+            margin: 35px;
+            font-size: 16px;
+        }
+    }
+}
+
+//#########
+//Animation for fading-in an fading-in out of the hamburger menu
+.fade-out{
+    animation: fade-out 400ms ease-in-out forwards;
+}
+
+.fade-in{
+    animation: fade-in 400ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    1%{
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fade-out {
+
+    from{
+        visibility: visible;
+        opacity: 1;
+    }
+    99%{
+        visibility: visible;
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

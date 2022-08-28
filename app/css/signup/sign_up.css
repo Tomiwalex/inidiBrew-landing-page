@@ -1,0 +1,172 @@
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FCF7F9), color-stop(#F6E8F9), to(#FCF7F9));
+  background-image: linear-gradient(to right bottom, #FCF7F9, #F6E8F9, #FCF7F9);
+  padding: 0 10px;
+}
+
+body::before {
+  background-image: none;
+  display: none;
+}
+
+.headers .header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.headers .header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headers .header div a img {
+  border: 1px black solid;
+  background-image: rgba(255, 255, 255, 0.534);
+  padding: 1px 5px;
+  border-radius: 3px;
+  position: relative;
+  top: 3px;
+}
+
+.headers .header div b {
+  margin: 0 9px 0 15px;
+  font-size: 14px;
+}
+
+.headers .header div b a {
+  color: black;
+}
+
+html {
+  height: 100vh;
+}
+
+.mains .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+@media (min-width: 64em) {
+  .mains .main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.mains .main .text {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 64em) {
+  .mains .main .text {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+.mains .main .text h1 {
+  font-size: 32px;
+}
+
+.mains .main .text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mains .main .text div b {
+  font-size: 16px;
+}
+
+.mains .main .text div span {
+  margin: 16px 12px 0px 0;
+}
+
+.mains .main .text div p {
+  color: black;
+}
+
+.mains .main .form {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.mains .main .form h3 {
+  font-size: 25px;
+}
+
+@media (min-width: 64em) {
+  .mains .main .form {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+.mains .main .form form {
+  background-color: #ffffffa1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+}
+
+.mains .main .form form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mains .main .form form input {
+  border-radius: 5px;
+  border: 1px solid #a3a3a3;
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.mains .main .form form input:focus, .mains .main .form form input:hover {
+  border: 1px solid #654efcaf;
+  outline: none;
+}
+
+.mains .main .form form .button {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: none;
+}
+
+.mains .main .form form .terms a {
+  color: #654efc;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=sign_up.css.map */
